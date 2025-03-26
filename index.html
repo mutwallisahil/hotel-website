@@ -1,0 +1,130 @@
+<html>
+<head>
+<title> MY HOTEL </title>
+<style>
+h1 {   font-size:40px;
+       color:white;
+       text-shadow: 2px 2px 4px rgba(200, 250, 100, 0.9);
+}
+
+h1:hover{
+     color:#2c3e50;
+     font-size:50px;
+}
+body  {
+       background: url('hii.jpg') no-repeat center center fixed;
+       background-size:cover;
+}
+div{position:relative;
+  
+    height:2px;
+    width:15px;
+    background-color:black;    
+    margin:3px;    
+}
+
+ul{display:block;
+   width:85%;
+   border:1px solid black;
+   padding:10px;
+   cursor: pointer;
+   position:relative;
+   top:-0.1cm;
+}
+ul li{
+       display:inline;
+       margin:2.9cm;
+       font-size:20px;
+       color:white;
+       text-shadow: 2px 2px 4px rgba(100, 250, 100, 0.9);
+} 
+ul li:hover{
+      border-bottom:2px solid black;
+      color:black;
+       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+ul:hover{
+      background-color:#9980FA; 
+
+}
+
+.dropdown {
+         display:block;
+         position:absolute;
+         display:none;
+        top:0.5cm;
+}
+.dropdown ul li{
+        display:block;
+       margin:10px;
+       
+}
+.dropdown ul{padding:9px;}
+ul li:hover .dropdown{
+          display:block;
+          
+}
+.dropdown2 {
+         display:block;
+         position:absolute;
+         display:none;
+         left:23.5cm; 
+        top:0.5cm;
+	
+}
+.dropdown2 ul li{
+        display:block;
+       margin:10px;
+}
+ul li:hover .dropdown2{
+          display:block;
+          
+}
+button{position:absolute;
+    width:1cm;
+    height:0.7cm;
+    left:33cm;
+top:2.4cm;
+     background-color:transparent;
+}
+button:hover{background-color:#9980FA;}
+a{color:white;}
+a:hover{color:black;}
+</style>
+</head>
+<body>
+<h1><center> HOTEL PEACE </center></h1>
+  <button>
+ 
+       <div></div>
+       <div></div>
+       <div></div>
+  </button>
+
+      <ul>
+          <li>Booking
+                  <menu class = "dropdown">
+                     <ul>
+                         <li><a href="room.html">Rooms</a></li>
+                         <li>Meetings & Events Area</li>
+                         <li><a href="secondpage.html">Restaurants</a></li>
+                     </ul>
+                 </menu>
+          </li>
+          <li>Offers</li>
+          <li>Amazing</li>
+          <li>Us
+                   <menu class= "dropdown2">
+                       <ul>
+                          <li>About</li>
+                          <li>Contact us</a></li>
+                          <li><a href="login.html">Login</a></li>
+                          <li><a href="account.html">Create_account</a></li>
+                      </ul>
+                   </menu>
+             </li>
+      </ul>
+  
+
+</body>
+</html>
