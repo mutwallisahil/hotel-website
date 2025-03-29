@@ -1,236 +1,93 @@
 <html>
 <head><title>Restaurent</title>
 <style>
-body {
-  background: Url('hi2.jpg')center center fixed;
-  background-size:cover;
+body {background-color:#2d3436;}
+ul{position:absolute;
+    left:18cm;
+    top:-1cm;  
+}
+ li{
+      color:white;
+      width:50%;
+     border:1px solid white;
+     display: inline;
+     margin:-1px;
+     padding:5px;
+}
 
-}
-h1{text-align:center;
-    font-size:40px;
-    text-shadow: 2px 2px 4px rgba(200, 250, 100, 0.9);
-    color:white;
-}
-h1:hover{
-  font-size:50px;
-  color:#f39c12;
-  text-shadow: 2px 2px 4px rgba(200, 250, 100, 0.9);
-}
-ul{  position:relative;
-   top:0.41cm;
-   border:1px solid black;
-   padding:5px;
-   cursor:pointer;
-}
-ul li{
-   display:inline;
-   margin:3.5cm;
- }
-ul:hover{
-   background-color:#bdc3c7;
-}
-ul li:hover{ color:black;
-}
- button{ 
-     background-color:transparent;
-       cursor: pointer;
-        color:white;
-}
-button:hover{  
-  color:black;
-  font-size:20px;
-background-color:#f7d794;
+logo img{
+         width:100px;
+        position:relative;
+    left:-19cm;
+    top:1cm;
+    border-radius:20%;
 }
 
 
- #imageContainer {
-            display: none;
-            margin-top: 20px;
-         position:absolute;
-        }
-        img {
-            width: 150px;
-            height: 150px;
-            margin: 1cm;
-        }
-div {
 
-   width:80%;
-   
-    box-shadow: 2px 1px 10px 7px black;
+
+.Dish{
+      
+      position:absolute;
+      top:4cm;
+      left:2cm;
+}
+.Dish img{  width:1200px;
+      height:400px;     
+  }
+  #image img{
+position:relative;
+top:15cm;
+left:5.5cm;
+margin:1cm;
+width:250px;
+border-radius:10%;
 }
 
- #image {
-            display: none;
-            margin-top: 20px;
-         position:absolute;
-        }
-        img {
-            width: 150px;
-            height: 150px;
-            margin: 1cm;
-        }
-div {
-
-   width:80%;
-   
-    box-shadow: 2px 1px 10px 7px black;
+h3{display:block;
+position:absolute;
+top:21.2cm;
+left:48.7%;
 }
 
-
- #image1 {
-            display: none;
-            margin-top: 20px;
-         position:absolute;
-        }
-        img {
-            width: 150px;
-            height: 150px;
-            margin: 1cm;
-        }
-div {
-
-   width:80%;
-   
-    box-shadow: 2px 1px 10px 7px black;
+h4{display:block;
+position:absolute;
+top:20.3cm;
+left:51%;
 }
 
 
- #image2 {
-            display: none;
-            margin-top: 20px;
-         position:absolute;
-        }
-        img {
-            width: 150px;
-            height: 150px;
-            margin: 1cm;
-        }
-div {
-
-   width:80%;
-   
-    box-shadow: 2px 1px 10px 7px black;
+h5{display:block;
+position:absolute;
+top:20.7cm;
+left:52%;
 }
-
 </style>
 </head>
 <body>
-
-<h1>Foodie</h1>
-
-
 <ul>
-<li>
+<li>HOME</li>
+<li>SERVICES</li>
+<li>ABOUT</li>
+<li>MENU</li>
+<li>CONTACT</li>
 
 
-<button onclick="toggleImages()">Chicken</button>
-
-    <div id="imageContainer">
-        <img src="1.jpg" alt="Image 1">
-        <img src="2.webp" alt="Image 2">
-        <img src="3.webp" alt="Image 3">
-        <img src="4.jpg" alt="Image 4">
-        <img src="5.jpg" alt="Image 5">
-        <img src="6.jpg" alt="Image 6">
-        <img src="7.jpg" alt="Image 7">
-        <img src="8.jpg" alt="Image 8">
-
-    </div>
-
-    <script>
-        function toggleImages() {
-            var container = document.getElementById("imageContainer");
-            if (container.style.display === "none" || container.style.display ==="") {
-                container.style.display = "block"; // Show images
-            } else {
-                container.style.display = "none"; // Hide images
-            }
-        }
-    </script>
-
-</li>
-
-<li>
-
-
-<button onclick="BiryaniImages()">Biryani</button>
-
-    <div id="image">
-        <img src="9.jpg" alt="Image 9">
-        <img src="10.jpg" alt="Image 10">
-        <img src="11.jpg" alt="Image 11">
-        <img src="12.jpg" alt="Image 12">
-        <img src="13.jpg" alt="Image 13">
-        <img src="14.jpg" alt="Image 14">
-       
-
-    </div>
-
-    <script>
-        function BiryaniImages() {
-            var container = document.getElementById("image");
-            if (container.style.display === "none" || container.style.display ==="") {
-                container.style.display = "block"; // Show images
-            } else {
-                container.style.display = "none"; // Hide images
-            }
-        }
-    </script>
-
-
-</li>
-<li>
-<button onclick="ChineseImages()">Chinese</button>
-
-    <div id="image1">
-        <img src="15.jpg" alt="Image 9">
-        <img src="16.jpg" alt="Image 10">
-        <img src="17.jpg" alt="Image 11">
-        <img src="18.jpg" alt="Image 12">
-       
-
-    </div>
-
-    <script>
-        function ChineseImages() {
-            var container = document.getElementById("image1");
-            if (container.style.display === "none" || container.style.display ==="") {
-                container.style.display = "block"; // Show images
-            } else {
-                container.style.display = "none"; // Hide images
-            }
-        }
-    </script>
-
-
-</li>
-
-
-<li><button onclick="SaladImages()">Salad</button>
-
-    <div id="image2">
-        <img src="19.jpg" alt="Image 9">
-        <img src="20.jpg" alt="Image 10">
-        <img src="21.jpg" alt="Image 11">
-       
-
-    </div>
-
-    <script>
-        function SaladImages() {
-            var container = document.getElementById("image2");
-            if (container.style.display === "none" || container.style.display ==="") {
-                container.style.display = "block"; // Show images
-            } else {
-                container.style.display = "none"; // Hide images
-            }
-        }
-    </script>
-
-
-</li>
+        <logo><img src="logo.jpeg" alt="Logo"></logo>
 </ul>
+       <div class="Dish"> <img src="0.jpeg" alt="Image dish"></div>
 
+
+           <div id="image">
+
+                <img src="0.8.jpg" alt="Image dish">
+                <img src="0.10.png" alt="Image dish">
+                <img src="0.11.jpg" alt="Image dish">
+
+           </div>
+
+<h4>Create</h4>
+<h5>By</h5>
+<h3>Sahil & Team</h3>
 </body>
 </html>
