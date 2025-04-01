@@ -1,12 +1,12 @@
 <html>
-<head><title>Biryani</title>
+<head><title>menu</title>
 <style>
 body {background-color:#2d3436;}
 logo img{height:100px;
          width:100px;
         position:relative;
      top:-1.2cm;
-left:3cm;
+     left:3cm;
     border-radius:20%;
          box-shadow: 1px 2px 2px 4px rgba(150, 350, 300, 0.9);
 
@@ -23,82 +23,63 @@ logo img:hover{height:100px;
 h1{text-align:center;
    font-size:50px;
    position:relative;
-   top:1cm;
+   top:3cm;
 color:white;
        text-shadow: 2px 2px 4px rgba(150, 350, 300, 0.9);
 
 }
 
 
-menu{
-width:95%;
-height:350px;
+.container{
+   width:95%;
+height:320px;
 background-color:white;
 border-radius:20px;
+  display:flex;
+margin:1.5cm;
+
 }
 
 
-div{  position:absolute;
-top:6.9cm;
+#box1{
+
 width:280px;
 height:280px;
 background-color:white;
 box-shadow:1px 2px 4px 3px black;
 border-radius:20px;
-
+margin:0.5cm;
+	
 }
-
-
-img{border-radius:20px;
-width:180px;
-height:180px;
-top:0.8cm;
-left:1.3cm;
-position:relative;
-}
-
-nav{  position:absolute;
-top:6.9cm;
-left:9.7cm;
-width:280px;
+#box2{ width:280px;
 height:280px;
 background-color:white;
 box-shadow:1px 2px 4px 3px black;
 border-radius:20px;
+margin:0.5cm;
 
 }
-
-nav2{  position:absolute;
-top:6.9cm;
-left:18.5cm;
-width:280px;
+#box3{ width:280px;
 height:280px;
 background-color:white;
 box-shadow:1px 2px 4px 3px black;
 border-radius:20px;
+margin:0.5cm;
 
 }
-nav3{  position:absolute;
-top:6.9cm;
-left:27cm;
-width:280px;
+#box4{ width:280px;
 height:280px;
 background-color:white;
 box-shadow:1px 2px 4px 3px black;
-border-radius:20px;
+border-radius:20px;	
+margin:0.5cm;
 
 }
-
-
-
-h2{position:absolute;
-    top:1cm;
-    left:15cm;
-}	
+	
 ul{
      position:absolute;
-     top:12.5cm;
-     left:-0.2cm;
+     top:16cm;
+     left:0.5cm;
 }
 ul li{
       display:inline;
@@ -106,13 +87,13 @@ ul li{
        font-size:20px;
 }
 
-img:hover{ width:190px; height:190px;}
-h3{display:block;
-position:absolute;
-top:17cm;
-left:45.5%;
+img{border-radius:20px;
+width:180px;
+height:180px;
+margin:1.3cm;
 }
-
+img:hover{ width:185px; height:185px;}
+h3 { text-align:center;}
 </style>
 </head>
 <body>
@@ -122,24 +103,17 @@ left:45.5%;
         <logo><a href="secondpage.html"><img src="logo.jpeg" alt="Logo"></a></logo>
 <hr>
 
-       <menu class="1">
+      
 
 
-    
+ <div class="container">
+              <div id="box1"> <a href="Biryani.html">   <img src="menu1.jpg" alt="Image dish"></a></div>
+             <div id="box2"> <a href="Chinese.html">  <img src="menu2.jpg" alt="Image dish"></a> </div>
+             <div id="box3"> <a href="chicken.html"> <img src="menu3.jpg" alt="Image dish"></a> </div>
+             <div id="box4"> <a href="salad.html"> <img src="menu4.jpg" alt="Image dish"></a> </div>
 
 
-
-
-
-           <div> <a href="Biryani.html">  <img src="menu1.jpg" alt="Image dish"></a></div>
-           <nav> <a href="Chinese.html">  <img src="menu2.jpg" alt="Image dish"></a></nav>
-           <nav2> <a href="chicken.html"> <img src="menu3.jpg" alt="Image dish"></a></nav2>
-           <nav3> <a href="salad.html"> <img src="menu4.jpg" alt="Image dish"></a></nav3>
-
-
-
-
-</menu>
+</div>
      	
      <ul>
   <li>Biryani</li>
