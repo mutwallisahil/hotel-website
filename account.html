@@ -1,82 +1,95 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Create a account</title>
+<title>Create Account</title>
+
 <style>
-body{background-color:#f7d794;}
+
+body{
+    background-color:#f7d794;
+    font-family:Arial, sans-serif;
+}
+
 h1{
-  position:absolute;
-  left:14.5cm;
-font-size:40px;
+    text-align:center;
+    font-size:40px;
+}
+
+.account{
+    width:400px;
+    margin:30px auto;
+    padding:20px;
+    background-color:white;
+    border-radius:10px;
+    box-shadow:2px 2px 10px gray;
 }
 
 .account label{
- position:absolute;
-   margin:5cm;
-   right:1cm;
-   cursor:pointer;
+    display:block;
+    margin-top:15px;
+    cursor:pointer;
+}
 
+.account input{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    box-sizing:border-box;
 }
-.account{   
-     position:relative;
-     right:9cm;
-     top:-2cm;
-     
-}
+
 button{
-position:relative;
-top:3.5cm;
-left:17.2cm;
-cursor:pointer;
+    display:block;
+    margin:20px auto;
+    padding:10px 20px;
+    cursor:pointer;
 }
-
 
 </style>
 </head>
+
 <body>
 
+<h1>Create Account</h1>
 
-<h1>Create account</h1>
-<menu>
+<form>
 
 <div class="account">
 
+<label>
+First Name:
+<input type="text" name="firstname" required>
+</label>
 
-<label>First name:
-<input type="text"name="
-name formsize="20">
-</label><br><br>
+<label>
+Middle Name:
+<input type="text" name="middlename">
+</label>
 
-<label>Middel name:
-<input type="text"name="
-name formsize="20">
-</label><br><br>
+<label>
+Last Name:
+<input type="text" name="lastname" required>
+</label>
 
+<label>
+Mobile:
+<input type="tel" name="mobile" required>
+</label>
 
-<label>Last name:
-<input type="text"name="
-name formsize="20">
-</label><br><br>
+<label>
+E-mail:
+<input type="email" name="email" required>
+</label>
 
-<label>Mobile:
-<input type="text"name="
-name formsize="20">
-</label><br><br>
+<label>
+Password:
+<input type="password" name="password" required>
+</label>
 
-
-<label>E-mail:
-<input type="text"name="
-name formsize="20">
-</label><br><br>
-
-<label>Password:
-<input type="text"name="
-name formsize="20">
-</label><br><br>
 </div>
 
-<button>Submit</button>
+<button type="submit">Submit</button>
 
-</menu>
+</form>
+
 </body>
-
 </html>
