@@ -1,76 +1,123 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Registation</title>
+<title>Registration</title>
+
 <style>
-body{background-color:#95afc0;}
-label{cursor:pointer;}
-div{position:relative;
-    top:1.4cm;
+body{
+    background-color:#95afc0;
+    font-family:Arial, sans-serif;
+}
+
+label{
+    cursor:pointer;
+}
+
+.container{
+    margin:40px auto;
     width:450px;
-    height:500px;
     background-color:#63cdda;
-    box-shadow: 2px 1px 10px 7px black;
-    transition:width 2s , height 2s;
+    box-shadow:2px 1px 10px 7px black;
+    padding:20px;
+    transition:width 2s, height 2s;
 }
 
-div:hover{
+.container:hover{
     width:500px;
-    height:530px;   
-   background-color:#778beb;
-   box-shadow: 2px 1px 10px 7px #778bebk;
+    background-color:#778beb;
+    box-shadow:2px 1px 10px 7px #778beb;
 }
 
+h1{
+    text-align:center;
+}
+
+input{
+    margin-top:5px;
+}
+
+button{
+    padding:8px 15px;
+    cursor:pointer;
+}
 </style>
 </head>
-<body>
-<center>
-<div>
-<h1> Room Registation</h1>
-<form action="">
-<p>
-<label>Name:
-<input type="text"name="
-name formsize="20">
-</label><br><br>
-<label>Gender:</label>
-<input type="radio"id"male"
-name="gender"="male"
-<label for="male">male</label>
-<input type="radio"id="female"
-name="gender"value="female">
-<label for="female">female</label><br><br>
-<label for="date">Check-in:</label>
-<input type="date"id="date"
-name="date"required><br><br>
-<label for="time">Check-in Time:</label>
-<input type="time"id="time"
-name="time"required><br><br>
-<label for="date">Check-out:</label>
-<input type="date"id="date"
-name="date"required><br><br>
-<label for="Time">Check-out Time:</label>
-<input type="time"id="time"
-name="time"required><br><br>
-<label for="Contact No">Contact no:</label>
-<input type="Contact"id="Contact"
-name="Contact"required><br><br>
-<label for="Email id">	Email id:</label>
-<input type="Email id"="email"
-name="email"required><br><br>
-<label for="Aadhar No">Aadhar No:</label>
-<input type="aadhar no"="aadhar no"
-name="adshar no"required><br><br>
-<label>Room: </label>
-<label for="luxury">Luxury</label>
-<input type="radio"id"Luxury"
-name="room"="luxury"
-<label for="normal">Normal:</label>
-<input type="radio"id="normal"
-name="room"required><br><br>
-<button>Submit</button>	
-</div>
-<center>	
 
+<body>
+
+<div class="container">
+
+<h1>Room Registration</h1>
+
+<form action="">
+
+<label>
+Name:
+<input type="text" name="name" size="20" required>
+</label>
+
+<br><br>
+
+<label>Gender:</label>
+
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label>
+
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label>
+
+<br><br>
+
+<label for="checkin">Check-in:</label>
+<input type="date" id="checkin" name="checkin" required>
+
+<br><br>
+
+<label for="checkintime">Check-in Time:</label>
+<input type="time" id="checkintime" name="checkintime" required>
+
+<br><br>
+
+<label for="checkout">Check-out:</label>
+<input type="date" id="checkout" name="checkout" required>
+
+<br><br>
+
+<label for="checkouttime">Check-out Time:</label>
+<input type="time" id="checkouttime" name="checkouttime" required>
+
+<br><br>
+
+<label for="contact">Contact No:</label>
+<input type="tel" id="contact" name="contact" required>
+
+<br><br>
+
+<label for="email">Email ID:</label>
+<input type="email" id="email" name="email" required>
+
+<br><br>
+
+<label for="aadhar">Aadhar No:</label>
+<input type="text" id="aadhar" name="aadhar" required>
+
+<br><br>
+
+<label>Room:</label>
+
+<input type="radio" id="luxury" name="room" value="luxury">
+<label for="luxury">Luxury</label>
+
+<input type="radio" id="normal" name="room" value="normal">
+<label for="normal">Normal</label>
+
+<br><br>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</div>
 
 </body>
 </html>
