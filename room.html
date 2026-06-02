@@ -1,125 +1,160 @@
+<!DOCTYPE html>
 <html>
-<head><title>Rooms</title>
+<head>
+<title>Rooms</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
-body{background-color:#c7ecee;}
-h1{   text-shadow: 2px 2px 4px rgba(200, 250, 0, 0.9);
-   text-align:center;
-   font-size:50;
+
+body{
+    background-color:#c7ecee;
+    font-family:Arial, sans-serif;
+    margin:0;
 }
-img{
-  width:290px;
-  height:260px;
-   margin:0.5cm;
-  box-shadow: 2px 1px 10px 7px black;
+
+h1{
+    text-align:center;
+    font-size:50px;
+    text-shadow:2px 2px 4px rgba(200,250,0,0.9);
 }
-div{
-  width:70%;
-  border:1px solid black;
+
+.container{
+    width:90%;
+    margin:auto;
 }
-.text{
-    position:absolute;
-    top:5cm;
-    left:18cm;
-    font-size:20px;
+
+.room{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    border:1px solid black;
+    background:white;
+    margin:20px 0;
+    padding:15px;
 }
-.text1{
-    position:absolute;
-    top:13cm;
-    left:18cm;
-    font-size:20px;
+
+.room img{
+    width:290px;
+    height:260px;
+    box-shadow:2px 1px 10px 7px black;
 }
-.text2{position:absolute;top:22cm;left:18cm; font-size:20px;}
-.text3{position:absolute;top:30cm;left:18cm; font-size:20px;}
-.text4{position:absolute;top:38cm;left:18cm; font-size:20px;}
-.text5{position:absolute;top:46cm;left:18cm; font-size:20px;}
-.text6{position:absolute;top:54cm;left:18cm; font-size:20px;}
-.text7{position:absolute;top:62cm;left:18cm; font-size:20px;}
-menu{
-color:black;
+
+.price{
+    font-size:24px;
+    font-weight:bold;
 }
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+/* Mobile */
+
+@media screen and (max-width:768px){
+
+    .room{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .room img{
+        width:90%;
+        height:auto;
+    }
+
+    h1{
+        font-size:35px;
+    }
+}
+
 </style>
 </head>
+
 <body>
 
-<h1>Rooms</h1><hr><hr>
-<div>
-<a href="Registation.html"><img src="room1.jpg"><hr>
-<img src="room2.avif"><hr>
-<img src="room3.jpg"><hr>
-<img src="room4.jpg"><hr>
-<img src="room5.jpg"><hr>
-<img src="room6.jpg"><hr>
-<img src="room7.jpg"><hr>
-<img src="room8.jpg">
+<h1>Rooms</h1>
+<hr><hr>
+
+<div class="container">
+
+<a href="Registation.html">
+<div class="room">
+    <img src="room1.jpg" alt="Room 1">
+    <div class="price">
+        From<br>
+        ₹22,000<br>
+        For tonight
+    </div>
 </div>
-<div class="menu">
-<menu class="text">
-<h2>
-    From<br>
-₹ 22,000<br>
-For tonight
+</a>
 
-</h2>
-</menu>
-<menu class="text1">
-<h2>
-    From<br>
-₹ 9,000<br>
-For tonight
-
-</h2>
-</menu>
-
-<menu class="text2">
-<h2>
-    From<br>
-₹ 14,000<br>
-For tonight
-
-</h2>
-</menu>
-<menu class="text3">
-<h2>
-    From<br>
-₹ 17,000<br>
-For tonight
-
-</h2>
-</menu>
-<menu class="text4">
-<h2>
-    From<br>
-₹ 19,000<br>
-For tonight
-
-</h2>
-</menu>
-<menu class="text5">
-<h2>
-    From<br>
-₹ 10,000<br>
-For tonight
-
-</h2>
-</menu>
-<menu class="text6">
-<h2>
-    From<br>
-₹ 8,000<br>
-For tonight
-
-</h2>
-</menu>
-<menu class="text7">
-<h2>
-    From<br>
-₹ 7,000<br>
-For tonight
-
-</h2>
-</menu>
+<div class="room">
+    <img src="room2.avif" alt="Room 2">
+    <div class="price">
+        From<br>
+        ₹9,000<br>
+        For tonight
+    </div>
 </div>
 
+<div class="room">
+    <img src="room3.jpg" alt="Room 3">
+    <div class="price">
+        From<br>
+        ₹14,000<br>
+        For tonight
+    </div>
+</div>
+
+<div class="room">
+    <img src="room4.jpg" alt="Room 4">
+    <div class="price">
+        From<br>
+        ₹17,000<br>
+        For tonight
+    </div>
+</div>
+
+<div class="room">
+    <img src="room5.jpg" alt="Room 5">
+    <div class="price">
+        From<br>
+        ₹19,000<br>
+        For tonight
+    </div>
+</div>
+
+<div class="room">
+    <img src="room6.jpg" alt="Room 6">
+    <div class="price">
+        From<br>
+        ₹10,000<br>
+        For tonight
+    </div>
+</div>
+
+<div class="room">
+    <img src="room7.jpg" alt="Room 7">
+    <div class="price">
+        From<br>
+        ₹8,000<br>
+        For tonight
+    </div>
+</div>
+
+<div class="room">
+    <img src="room8.jpg" alt="Room 8">
+    <div class="price">
+        From<br>
+        ₹7,000<br>
+        For tonight
+    </div>
+</div>
+
+</div>
 
 </body>
 </html>
