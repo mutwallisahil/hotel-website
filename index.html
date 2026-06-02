@@ -1,131 +1,141 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title> MY HOTEL </title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MY HOTEL</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
-h1 {   font-size:40px;
-       color:white;
-       text-shadow: 2px 2px 4px rgba(200, 250, 100, 0.9);
+
+body{
+    background:url('hii.jpg') no-repeat center center fixed;
+    background-size:cover;
+    margin:0;
+    font-family:Arial, sans-serif;
+}
+
+h1{
+    text-align:center;
+    color:white;
+    font-size:40px;
+    text-shadow:2px 2px 4px rgba(200,250,100,0.9);
 }
 
 h1:hover{
-     color:#2c3e50;
-     font-size:50px;
-}
-body  {
-       background: url('hii.jpg') no-repeat center center fixed;
-       background-size:cover;
-}
-div{position:relative;
-  
-    height:2px;
-    width:15px;
-    background-color:black;    
-    margin:3px;    
+    color:#2c3e50;
 }
 
-ul{display:block;
-   width:85%;
-   border:1px solid black;
-   padding:10px;
-   cursor: pointer;
-   position:relative;
-   top:-0.1cm;
+ul{
+    list-style:none;
+    margin:0;
+    padding:10px;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    border:1px solid black;
+    position:relative;
 }
+
 ul li{
-       display:inline;
-       margin:2.9cm;
-       font-size:20px;
-       color:white;
-       text-shadow: 2px 2px 4px rgba(100, 250, 100, 0.9);
-} 
+    position:relative;
+    color:white;
+    cursor:pointer;
+    font-size:20px;
+    text-shadow:2px 2px 4px rgba(100,250,100,0.9);
+}
+
 ul li:hover{
-      border-bottom:2px solid black;
-      color:black;
-       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-}
-ul:hover{
-      background-color:#9980FA; 
-
+    color:black;
 }
 
-.dropdown {
-         display:block;
-         position:absolute;
-         display:none;
-        top:0.5cm;
+a{
+    color:white;
+    text-decoration:none;
 }
-.dropdown ul li{
-        display:block;
-       margin:10px;
-       
+
+a:hover{
+    color:black;
 }
-.dropdown ul{padding:9px;}
-ul li:hover .dropdown{
-          display:block;
-          
+
+/* Dropdown Menu */
+
+.dropdown,
+.dropdown2{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#9980FA;
+    min-width:200px;
+    padding:0;
+    border:1px solid black;
 }
-.dropdown2 {
-         display:block;
-         position:absolute;
-         display:none;
-         left:23.5cm; 
-        top:0.5cm;
-	
+
+.dropdown li,
+.dropdown2 li{
+    display:block;
+    padding:10px;
+    margin:0;
 }
-.dropdown2 ul li{
-        display:block;
-       margin:10px;
+
+li:hover .dropdown,
+li:hover .dropdown2{
+    display:block;
 }
-ul li:hover .dropdown2{
-          display:block;
-          
+
+/* Mobile Responsive */
+
+@media screen and (max-width:768px){
+
+    h1{
+        font-size:28px;
+    }
+
+    ul{
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+    }
+
+    .dropdown,
+    .dropdown2{
+        position:static;
+        width:100%;
+    }
 }
-button{position:absolute;
-    width:1cm;
-    height:0.7cm;
-    left:33cm;
-top:2.4cm;
-     background-color:transparent;
-}
-button:hover{background-color:#9980FA;}
-a{color:white;}
-a:hover{color:black;}
+
 </style>
 </head>
-<body>
-<h1><center> HOTEL PEACE </center></h1>
-  <button>
- 
-       <div></div>
-       <div></div>
-       <div></div>
-  </button>
 
-      <ul>
-          <li>Booking
-                  <menu class = "dropdown">
-                     <ul>
-                         <li><a href="room.html">Rooms</a></li>
-                         <li>Meetings & Events Area</li>
-                         <li><a href="secondpage.html">Restaurants</a></li>
-                     </ul>
-                 </menu>
-          </li>
-          <li>Offers</li>
-          <li>Amazing</li>
-          <li>Us
-                   <menu class= "dropdown2">
-                       <ul>
-                          <li>About</li>
-                          <li><a href="contact1.html">Contact us</a></li>
-                          <li><a href="login.html">Login</a></li>
-                          <li><a href="account.html">Create_account</a></li>
-                      </ul>
-                   </menu>
-             </li>
-      </ul>
-  
+<body>
+
+<h1>HOTEL PEACE</h1>
+
+<ul>
+    <li>
+        Booking
+        <ul class="dropdown">
+            <li><a href="room.html">Rooms</a></li>
+            <li>Meetings & Events Area</li>
+            <li><a href="secondpage.html">Restaurants</a></li>
+        </ul>
+    </li>
+
+    <li>Offers</li>
+
+    <li>Amazing</li>
+
+    <li>
+        Us
+        <ul class="dropdown2">
+            <li>About</li>
+            <li><a href="contact1.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="account.html">Create Account</a></li>
+        </ul>
+    </li>
+</ul>
 
 </body>
 </html>
